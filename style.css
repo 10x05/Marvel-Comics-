@@ -1,0 +1,501 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+main {
+  height: calc(100vh-80px);
+}
+nav {
+  height: 80px;
+  background-color: #000000;
+}
+.marvel-logo {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  color: #ffffff;
+  display: inline-block;
+  line-height: 70px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  padding: 7px 14px;
+  border-radius: 2px;
+}
+a.active,
+a:hover {
+  background: hsla(358, 85%, 52%, 1);
+  padding: 4px 8px;
+  transition-duration: 0.2s;
+}
+.fa-magnifying-glass {
+  color: #ffffff;
+  float: right;
+}
+.checkbtn {
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffffff;
+  float: right;
+  margin-right: 50px;
+  line-height: 1.5rem;
+  display: none;
+}
+#checkbox {
+  display: none;
+}
+.dp {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: url("./images/displaypic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+    float: left;
+  }
+  .dp {
+    display: none;
+  }
+  .marvel-logo {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 103, 107);
+    top: 90px;
+    left: -100%;
+    text-align: center;
+  }
+  /* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  nav ul li a {
+    font-size: 1.5rem;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: rgb(142, 120, 121);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.second-section {
+  width: 100%;
+  height: 400px;
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(
+      135deg,
+      hsla(4, 91%, 49%, 0.65),
+      hsla(41, 19%, 41%, 0.65)
+    ),
+    url("./images/comics\ marvel.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.shh1 {
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  left: 30%;
+  top: 150px;
+  text-transform: uppercase;
+}
+.third-section {
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+  font-weight: 600;
+  background: hsla(358, 85%, 52%, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.third-classh {
+  width: 367px;
+  /* height: 47px; */
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 47px;
+}
+.third-classp {
+  position: absolute;
+  left: 50px;
+  top: 140px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+  width: 150px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.third-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px;
+  background-color: #000000;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+.third-button:hover {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fourth-section {
+  width: 100%;
+  /* height: 400px; */
+  background-color: #000000;
+  display: flex;
+}
+.flex-item {
+  width: 16.67%;
+  height: 400px;
+}
+.onee {
+  background: url("./images/captain\ america.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.twoo {
+  background: url("./images/black\ panther.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.threee {
+  background: url("./images/black\ widow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fourr {
+  background: url("./images/shuri\(marvel\ website\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fivee {
+  background: url("./images/antman.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sixx {
+  background: url("./images/thor.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1000px) {
+  .fourth-section {
+    display: block;
+    column-count: 2;
+  }
+  .flex-item {
+    height: 40vh;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.fifth-section {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  background: hsla(358, 85%, 52%, 1);
+  text-align: center;
+}
+.fifth-classh {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: Roboto;
+  padding: 40px 40px 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 15%);
+  grid-template-rows: repeat(2, 300px);
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.grid-items {
+  border-radius: 7px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(4, 200px);
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .grid-items {
+    border-radius: 7px;
+    text-align: center;
+  }
+}
+.one {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.two {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.three {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.four {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.five {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.six {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.seven {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.eight {
+  background: url("./images/captain\ marvel\ comics\ \(marvel\ website\)\ 8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section55-btn {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+.section5-btn {
+  padding: 3px 8px;
+  color: #ffffff;
+  border-radius: 3px;
+  background: hsla(358, 85%, 52%, 1);
+}
+.section5-btn:hover {
+  background-color: #000000;
+}
+.sixth-section {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+  background-color: hsla(0, 0%, 0%, 1);
+}
+@media (min-width: 768px) {
+  .sixth-section {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.maps-image {
+  height: 40vh;
+  width: 100%;
+  object-fit: center;
+}
+@media (min-width: 758px) {
+  .maps-image {
+    height: 50vh;
+  }
+}
+.sixth-sectionh3 {
+  color: hsla(358, 85%, 52%, 1);
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 5px 10px;
+}
+.sixth-sectionh33 {
+  color: hsla(0, 0%, 100%, 1);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: Roboto;
+  line-height: 1.5rem;
+  margin: 5px 10px;
+}
+.sixth-sectionp {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 5px 10px;
+}
+.sixth-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px;
+  margin: 5px 10px 20px;
+  background-color: hsla(358, 85%, 52%, 1);
+}
+.sixth-button:hover {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer {
+  padding: 20px;
+  background: hsla(0, 0%, 8%, 1);
+}
+.footer1 {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-section-ul2 ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.footer-section-ul1 ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.footer-section-logos {
+  display: flex;
+  flex-direction: column;
+}
+.footer-img-logo1 {
+  width: 50px;
+}
+.footer-img-logo2 {
+  width: 50px;
+  margin-top: 20px;
+}
+.footer-section-advertH1,
+.footer-section-advertH2,
+.footer-section-socialmediaH {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.footer-section-advertp1,
+.footer-section-advertp2 {
+  font-size: 0.5rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+.fa-brands {
+  margin: 5px;
+}
+.footer2 {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Roboto;
+  border-top: 2px solid #767676;
+}
+.footer2p {
+  display: inline-block;
+  color: #767676;
+  font-size: 0.8rem;
+  line-height: 1.2em;
+  text-transform: capitalize;
+  margin: 10px 5px 0;
+}
+@media (max-width: 1000px) {
+  .footer-section-img {
+    height: 40px;
+  }
+  .footer1 {
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
+.footer-section-advertH1,
+.footer-section-advertH2,
+.footer-section-socialmediaH {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+  .footer2 {
+    font-size: 0.5rem;
+  }
+}
